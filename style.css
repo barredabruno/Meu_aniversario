@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Garante que o gradiente ocupe toda a tela */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #3498db, #e74c3c, #f39c12); /* Gradiente com azul, vermelho e amarelo */
+    color: #333;
+    height: 100%; /* Garante que o fundo cubra toda a altura da tela */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #8e44ad;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2em;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.intro {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tickets {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.tickets form {
+    display: inline-block;
+    text-align: left;
+}
+
+.tickets label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tickets select {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.tickets button {
+    padding: 10px 20px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tickets button:hover {
+    background-color: #9b59b6;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #8e44ad;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo img {
+        max-width: 80px;
+    }
+
+    .intro h2 {
+        font-size: 1.5em;
+    }
+
+    .tickets form {
+        width: 100%;
+    }
+
+    .tickets select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+#countdown {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e8f4fa;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+#countdown h3 {
+    margin: 0;
+}
